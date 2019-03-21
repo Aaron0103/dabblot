@@ -1,0 +1,26 @@
+/**
+ * Illustrating correct & wrong inner border-radius
+ */
+
+.outer {
+	padding: 10px;
+	margin: 50px;
+	border: 1px solid gold;
+	box-shadow: 0 0 10px black;
+	border-radius: 20px;
+}
+
+div div {
+	padding: 30px;
+	background: slategray;
+	font-size: 200%;
+	font-weight: bold;
+	color: black;
+	border-radius:10px;
+}
+
+.outer.wrong div {
+	border-radius: inherit;
+}
+<div class="outer right"><div>Hallo ihr Leute</div></div>
+<div class="outer wrong"><div>Das ist Schön</div>
